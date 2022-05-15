@@ -72,7 +72,7 @@ const someFunction = function (sampleArray) {
 const functionForSome = (sampleArray) => {
   const result = [];
   for (let i = 0; i < sampleArray.length; i++) {
-    if (sampleArray[i] > 2) result.push(sampleArray[i]);
+    if (sampleArray[i] > 5) result.push(sampleArray[i]);
   }
 
   return result.length > 0 ? true : false;
