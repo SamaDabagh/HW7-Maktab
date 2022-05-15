@@ -1,0 +1,108 @@
+*/ {
+  box-sizing: border-box;
+  margin: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85rem;
+  height: 37rem;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 53rem;
+  height: 35rem;
+  background-color: rgb(229, 241, 245);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 34rem;
+  height: 14rem;
+}
+.container-steps {
+  margin-top: 4rem;
+  justify-content: center;
+}
+.container-icon {
+  position: relative;
+}
+.container-box {
+  position: relative;
+  width: 33.3%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border: 0.1rem solid rgba(216, 213, 213, 0.347);
+  text-align: center;
+}
+.container-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 3.8rem;
+  top: -1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 0.1rem solid rgba(216, 213, 213, 0.347);
+}
+.container-circle > p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container-text {
+  text-align: center;
+}
+.container-text > p {
+  font-size: 0.6rem;
+  line-height: 1.4;
+  padding: 0.9rem;
+  margin-top: 0;
+}
+
+.fa-solid {
+  color: rgb(33, 96, 180);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.quarter_circle_top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8rem;
+  height: 8rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 100%;
+  background-color: rgb(33, 96, 180);
+}
+.quarter_circle_bottem {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 8rem;
+  height: 8rem;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgb(33, 96, 180);
+}
+h5 {
+  margin-bottom: 0.3rem;
+  text-transform: capitalize;
+}
