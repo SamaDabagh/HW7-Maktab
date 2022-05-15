@@ -2,34 +2,25 @@
 
 //filter
 
-// const filtering = (array) => {
-//   let result = [];
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i].length < 5) {
-//       result.push(array[i]);
-//     }
-//   }
-//   return result;
-// };
-// console.log(filtering(arr));
-
 const filterFunction = function (sampleArray) {
   let tempArr = [];
-  for (let i = 0; i < sampleArray.length; i++) {
-    if (functionForFilter(sampleArray[i])) {
-      tempArr += tempArr + functionForFilter(sampleArray[i]);
-    }
+
+  if (functionForFilter(sampleArray)) {
+    tempArr.push(functionForFilter(sampleArray));
   }
+
   return tempArr;
 };
 
-const functionForFilter = (array) => {
+const functionForFilter = (sampleArray) => {
+  const result = [];
   for (let i = 0; i < sampleArray.length; i++) {
-    if (item.length < 5) return result.push(array[i]);
+    if (sampleArray[i] > 3) result.push(sampleArray[i]);
   }
+  return result;
 };
-const arr = ["hi", "bye", "population", " satisfies"];
-console.log(functionForFilter(arr));
+const arr = [1, 2, 3, 5];
+console.log(`filter function =>`);
 console.log(filterFunction(arr));
 
 // find
@@ -72,3 +63,20 @@ function splice(array, begin, remove, replace) {
 }
 console.log(`splice function =>`);
 console.log(splice([8, 3, 4, 5, 4, 6, 7, 8], 4, 3, ["a", "b", "c"]));
+
+// some
+const someFunction = function (sampleArray) {
+  return functionForSome(sampleArray);
+};
+
+const functionForSome = (sampleArray) => {
+  const result = [];
+  for (let i = 0; i < sampleArray.length; i++) {
+    if (sampleArray[i] > 2) result.push(sampleArray[i]);
+  }
+
+  return result.length > 0 ? true : false;
+};
+const array = [1, 2, 3, 5];
+console.log(`some function =>`);
+console.log(someFunction(array));
